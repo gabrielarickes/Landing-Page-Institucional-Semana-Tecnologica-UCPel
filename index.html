@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana Tecnológica UCPel | Quantum Leap Summit 2026 </title>
+  <meta name="description" content="11ª Semana Tecnológica da UCPel — Quantum Leap Summit 2026. Palestras, oficinas e networking sobre computação quântica.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+</head>
+
+<body>
+  <!-- HEADER / MENU DE NAVEGAÇÃO -->
+  <header class="header" id="header">
+    <div class="header_interno">
+      <a href="#topo" class="header_logo">
+        <img src="src/img/logo2023_sites.png" alt="Logo da Universidade Católica de Pelotas" class="header_logo-marca">
+        <span class="header_logo-texto">Semana Tecnológica <span>UCPel</span></span>
+
+      </a>
+
+      <nav class="header_nav" id="navheader" aria-label="Menu principal">
+        <ul class="nav-lista" id="nav_lista">
+
+          <li class="nav-item ativo">
+            <a href="#topo" data-nav>Sobre o evento</a>
+          </li>
+          <li class="nav-item">
+            <a href="#programacao" data-nav>Programação</a>
+          </li>
+          <li class="nav-item">
+            <a href="#palestrantes" data-nav>Palestrantes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#local" data-nav>Local</a>
+          </li>
+          <li class="nav-item">
+            <a href="#organizacao" data-nav>Organização</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" data-nav>Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+       <div class="header_actions">
+          <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn-padrao">Inscreva-se</a>
+          <button id="mobile-btn" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <div id="mobile_menu">
+    
+    <ul id="mobile_nav_lista">
+      <li class="nav-item">
+        <a href="#topo">Sobre o evento</a>
+      </li>
+      <li class="nav-item">
+        <a href="#programacao">Programação</a>
+      </li>
+      <li class="nav-item">
+        <a href="#palestrantes">Palestrantes</a>
+      </li>
+      <li class="nav-item">
+        <a href="#local">Localização</a>
+      </li>
+      <li class="nav-item">
+        <a href="#organizacao">Organização</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contato">Contato</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn-padrao">Inscreva-se</a>
+      </li>
+    </ul>
+  </div>
+
+  <!--BANNER ROTATIVO-->
+  <section class="banner" id="topo">
+
+    <div class="banner_slides" id="bannerSlides">
+      <!-- Slide 1: identificação do evento -->
+      <div class="banner_slide ativo" style="background-image:url('src/img/banner1.png')">
+        <div class="banner_sobreposicao"></div>
+
+        <div class="container banner_conteudo">
+          <p class="titulo_acima">12ª Semana Tecnológica UCPel</p>
+          <h1 class="banner_titulo">Quantum Leap<br>Summit 2026</h1>
+          <p class="banner_subtitulo">Decifrando o futuro, um qubit de cada vez</p>
+
+          <div class="banner_info">
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> 10 a 14 de novembro de 2026</span>
+            <span><i class="fas fa-location-dot" aria-hidden="true"></i> Universidade Católica de Pelotas</span>
+          </div>
+
+          <div class="banner_acoes">
+            <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-primario">Inscreva-se gratuitamente</a>
+            <a href="#programacao" class="btn btn-secundario">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: sobre o evento -->
+      <div class="banner_slide" style="background-image:url('src/img/banner2.png')">
+        <div class="banner_sobreposicao"></div>
+        <div class="container banner_conteudo">
+          <p class="titulo_acima">Sobre o evento</p>
+          <h1 class="banner_titulo">Do bit ao qubit</h1>
+          <p class="banner_subtitulo">Uma semana dedicada a explorar os fundamentos e as aplicações práticas
+            da computação quântica, com pesquisadores e profissionais convidados de diferentes instituições.</p>
+          <div class="banner_acoes">
+            <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-primario">Inscreva-se gratuitamente</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 3:-->
+      <div class="banner_slide" style="background-image:url('src/img/banner3.png');">
+        <div class="banner_sobreposicao"></div>
+        <div class="container banner_conteudo">
+          <p class="titulo_acima"> Um universo de possibilidades </p>
+          <h1 class="banner_titulo">E se um bit pudesse ser 0 e 1 ao mesmo tempo?</h1>
+          <p class="banner_subtitulo">A computação quântica desafia tudo que você aprendeu sobre
+        como um computador processa informação.</p>
+          <div class="banner_info" style="visibility:hidden;">&nbsp;</div>
+          <div class="banner_acoes">
+            <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-primario">Inscreva-se gratuitamente</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   
+    <button class="banner_seta banner_seta-anterior" id="bannerAnterior" aria-label="Slide anterior">&#8249;</button>
+    <button class="banner_seta banner_seta-proximo" id="bannerProximo" aria-label="Próximo slide">&#8250;</button>
+    
+    
+    <div class="banner_indicadores" id="bannerIndicadores"></div>
+  </section>
+
+  <!-- PROGRAMAÇÃO (Palestras + Oficinas)-->
+  <section class="secao secao-alt revelar" id="programacao">
+   
+    <div class="container">
+      <h2 class="secao_titulo">Programação</h2>
+      <p class="secao_introducao">Confira as palestras e oficinas da edição 2026. Deslize para o lado para ver mais.</p>
+
+      <h3 class="secao_subtitulo">Palestras</h3>
+
+      <div class="carossel" id="carosselPalestras">
+      
+        <button class="carossel_seta carossel_seta-anterior" data-carossel-anterior aria-label="Palestra anterior">&#8249;</button>
+     
+        <div class="carossel_trilha">
+
+         <article class="card card-palestra card-virar" tabindex="0" role="button" aria-expanded="false" aria-label="Ver descrição da palestra: Ameaça Quântica à Criptografia Moderna">
+            <div class="card_interno">
+
+             <div class="card_frente">
+                <p class="card_tag">12/11 · 19h15 às 20h30</p>
+                <h4>Ameaça Quântica à Criptografia Moderna</h4>
+                <p class="card_info">Peter Shor · Vagas ilimitadas</p>
+                  <p class="card_local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Auditório Dom Antônio Zattera
+                  </p>
+                <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-pequeno btn-contorno" target="_blank" rel="noopener">Inscrever-se
+                </a>
+             </div>
+
+            <div class="card_verso">
+             <p class="card_verso-texto">Descubra como o avanço dos computadores quânticos coloca em risco os sistemas de segurança atuais, como o RSA. 
+              Entenda o impacto do Algoritmo de Shor na cibersegurança e conheça as novas soluções da Criptografia Pós-Quântica.</p>
+             </div>
+
+             </div>
+        </article>
+
+           <article class="card card-palestra card-virar" tabindex="0" role="button" aria-expanded="false" aria-label="Ver descrição da palestra: Computação Quântica: da Teoria à Prática">
+            <div class="card_interno">
+
+             <div class="card_frente">
+                <p class="card_tag">12/11 · 20h45 às 22h</p>
+                <h4>Computação Quântica: da Teoria à Prática</h4>
+                <p class="card_info">David Deutsch · Vagas ilimitadas</p>
+                 <p class="card_local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Auditório Dom Antônio Zattera
+                  </p>
+                <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-pequeno btn-contorno" target="_blank" rel="noopener">Inscrever-se
+                </a>
+             </div>
+
+            <div class="card_verso">
+             <p class="card_verso-texto">Desmistifique os conceitos de qubits, superposição e emaranhamento aplicados a problemas do mundo real.
+               Veja como a tecnologia quântica está saindo dos laboratórios para transformar áreas como otimização, logística e inovação em TI.</p>
+             </div>
+
+             </div>
+           </article>
+          <article class="card card-palestra card-virar" tabindex="0" role="button" aria-expanded="false" aria-label="Ver descrição da palestra: Machine Learning Quântico: Onde a IA Encontra o Qubit">
+            <div class="card_interno">
+
+             <div class="card_frente">
+                <p class="card_tag">13/11 · 19h15 às 20h30</p>
+                <h4>Machine Learning Quântico: Onde a IA Encontra o Qubit</h4>
+                <p class="card_info">Michele Mosca · Vagas ilimitadas</p>
+                 <p class="card_local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Auditório Dom Antônio Zattera
+                  </p>
+                <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-pequeno btn-contorno" target="_blank" rel="noopener">Inscrever-se
+                </a>
+             </div>
+
+            <div class="card_verso">
+             <p class="card_verso-texto">Explore o ponto de encontro entre a inteligência artificial e a mecânica quântica. 
+              Entenda como o uso de qubits e algoritmos quânticos pode acelerar o treinamento de modelos complexos e redefinir o futuro do aprendizado de máquina.</p>
+             </div>
+
+             </div>
+          </article>
+           <article class="card card-palestra card-virar" tabindex="0" role="button" aria-expanded="false" aria-label="Ver descrição da palestra: Da Nuvem ao Qubit: Computação Quântica como Serviço">
+            <div class="card_interno">
+
+             <div class="card_frente">
+                <p class="card_tag">14/11 · 19h15 às 20h30</p>
+                <h4>Da Nuvem ao Qubit: Computação Quântica como Serviço</h4>
+                <p class="card_info">Gabriela Rickes · Vagas ilimitadas</p>
+                 <p class="card_local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Auditório Dom Antônio Zattera
+                  </p>
+                <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-pequeno btn-contorno" target="_blank" rel="noopener">Inscrever-se
+                </a>
+             </div>
+
+            <div class="card_verso">
+             <p class="card_verso-texto">Saiba como as principais plataformas de nuvem já permitem acessar computadores quânticos reais remotamente. 
+              Descubra a estrutura do modelo QaaS (Quantum as a Service) e veja como desenvolvedores podem testar e rodar algoritmos quânticos sem precisar de um superlaboratório.</p>
+             </div>
+
+             </div>
+
+           </article>
+        </div>
+        
+        <button class="carossel_seta carossel_seta-proximo" data-carossel-proximo aria-label="Próxima palestra">&#8250;</button>
+      </div>
+      <!-- fim do carrossel de palestras -->
+      <!-- inicio do carrossel de oficinas -->
+      <h3 class="secao_subtitulo">Oficinas</h3>
+
+      <div class="carossel" id="carosselOficinas">
+        <button class="carossel_seta carossel_seta-anterior" data-carossel-anterior aria-label="Oficina anterior">&#8249;</button>
+        <div class="carossel_trilha">
+
+          <article class="card card-oficina card-virar" tabindex="0" role="button" aria-expanded="false" aria-label="Ver descrição da oficina: Introdução a Circuitos Quânticos">
+            <div class="card_interno">
+                <div class="card_frente">
+                    <p class="card_tag">10/11 · 19h às 22h</p>
+                    <h4>Introdução a Circuitos Quânticos</h4>
+                    <p class="card_info">25 vagas</p>
+                    <p class="card_local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Laboratório de Informática 1
+                  </p>
+                    <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-pequeno btn-contorno" target="_blank" rel="noopener">Inscrever-se
+                </a>
+                </div>
+
+            <div class="card_verso">
+            <p class="card_verso-texto">Coloque a mão na massa construindo seus primeiros circuitos quânticos do zero. Nesta oficina prática, 
+              você vai aprender a manipular portas lógicas quânticas, entender o comportamento de qubits e simular portas Hadamard e CNOT na prática.</p>
+            </div>
+
+             </div>
+         </article>
+
+         <article class="card card-oficina card-virar" tabindex="0" role="button" aria-expanded="false" aria-label="Ver descrição da oficina: Simulando Qubits com Qiskit">
+            <div class="card_interno">
+                <div class="card_frente">
+                    <p class="card_tag">11/11 · 19h às 22h</p>
+                    <h4>Simulando Qubits com Qiskit</h4>
+                    <p class="card_info">25 vagas</p>
+                    <p class="card_local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Laboratório de Informática 9
+                  </p>
+                    <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-pequeno btn-contorno" target="_blank" rel="noopener">Inscrever-se
+                </a>
+                </div>
+
+            <div class="card_verso">
+            <p class="card_verso-texto">Aprenda a programar um computador quântico real utilizando o framework open-source da IBM. Nesta oficina, 
+              você vai escrever seus primeiros scripts em Python, criar circuitos com qubits e executar simulações quânticas diretamente no Qiskit.</p>
+            </div>
+
+             </div>
+         </article>
+
+         <article class="card card-oficina card-virar" tabindex="0" role="button" aria-expanded="false" aria-label="Ver descrição da oficina: Redes Neurais Quânticas na Prática">
+            <div class="card_interno">
+                <div class="card_frente">
+                    <p class="card_tag">13/11 · 19h às 22h</p>
+                    <h4>Redes Neurais Quânticas na Prática</h4>
+                    <p class="card_info">25 vagas</p>
+                    <p class="card_local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Laboratório de Informática 4
+                  </p>
+                    <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-pequeno btn-contorno" target="_blank" rel="noopener">Inscrever-se
+                </a>
+                </div>
+
+            <div class="card_verso">
+            <p class="card_verso-texto">Aprenda a unir inteligência artificial e física quântica. 
+              Nesta oficina, você vai construir e treinar Quantum Neural Networks (QNNs) com Python para resolver problemas de classificação de dados.</p>
+            </div>
+
+             </div>
+         </article>
+
+        <article class="card card-oficina card-virar" tabindex="0" role="button" aria-expanded="false" aria-label="Ver descrição da oficina: Criptografia Quântica em Python">
+            <div class="card_interno">
+                <div class="card_frente">
+                    <p class="card_tag">14/11 · 19h às 22h</p>
+                    <h4>Criptografia Quântica em Python</h4>
+                    <p class="card_info">25 vagas</p>
+                    <p class="card_local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Laboratório de Informática 3
+                  </p>  
+                    <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-pequeno btn-contorno" target="_blank" rel="noopener">Inscrever-se
+                </a>
+                </div>
+
+            <div class="card_verso">
+            <p class="card_verso-texto">Aprenda a criar comunicações invioláveis programando o protocolo quântico BB84 em Python.</p>
+            </div>
+
+             </div>
+         </article>
+        </div>
+        <button class="carossel_seta carossel_seta-proximo" data-carossel-proximo aria-label="Próxima oficina">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PALESTRANTES -->
+  <section class="secao revelar" id="palestrantes">
+    <div class="container">
+      <h2 class="secao_titulo">Palestrantes</h2>
+      <p class="secao_introducao">Conheça quem vai compartilhar conhecimento nesta edição.</p>
+
+      <div class="swiper" id="swiperPalestrantes">
+        <button class="swiper_seta swiper_seta-anterior" aria-label="Palestrante anterior">&#8249;</button>
+
+        <div class="swiper_stage">
+       
+          <article class="swiper_slide ativo">
+            <!--<div class="card__avatar" aria-hidden="true"></div>-->
+            <img class="card_foto" src="src/img/david.jpg" alt="Foto de David Deutsch">
+            <h4>David Deutsch</h4>
+            <p class="swiper_descricao">Físico israelense. Pioneiro no campo dos computadores quânticos, um dos fundadores da teoria da computação quântica.</p>
+            <a href="https://www.linkedin.com/in/gabriela-angelita-hessler-rickes-740b623a6" class="card_link" target="_blank" rel="noopener">Linkedin &#8599;</a>      
+         </article>
+
+          <article class="swiper_slide">
+            <img class="card_foto" src="src/img/michele.jpeg" alt="Foto de Michele Mosca">        
+            <h4>Michele Mosca</h4>
+            <p class="swiper_descricao">Referência em criptografia pós-quântica. É cofundador e vice-diretor do Instituto de Computação Quântica da Universidade de Waterloo. </p>
+            <a href="https://www.linkedin.com/in/gabriela-angelita-hessler-rickes-740b623a6" class="card_link">Linkedin &#8599;</a>
+          </article>
+
+          <article class="swiper_slide">
+            <img class="card_foto" src="src/img/peter.jpeg" alt="Foto de Peter Shor">
+            <h4>Peter Shor</h4>
+            <p class="swiper_descricao">Professor de matemática aplicada no Instituto de Tecnologia de Massachusetts, é criador do algoritmo de Shor</p>
+            <a href="https://www.linkedin.com/in/gabriela-angelita-hessler-rickes-740b623a6" class="card_link">Linkedin &#8599;</a>
+          </article>
+        </div>
+
+        <button class="swiper_seta swiper_seta-proximo" aria-label="Próximo palestrante">&#8250;</button>
+      </div>
+
+      <div class="swiper_progresso" id="swiperProgresso"></div>
+      
+    </div>
+  </section>
+
+  <!-- TELA 5: INCENTIVO + LOCALIZAÇÃO -->
+  <section class="secao secao-alt revelar" id="local">
+    <div class="container">
+
+      <div class="incentivo">
+        <h2 class="secao_titulo">Faça parte da história</h2>
+        <p class="secao_introducao">Participe da 12ª edição da Semana Tecnológica e mergulhe no universo da
+          computação quântica com quem está na fronteira dessa pesquisa.</p>
+
+        <div class="contador" id="contador" aria-label="Contagem regressiva para o evento">
+          <div class="contador_item">
+            <span class="contador_valor" id="cd-dias">00</span>
+            <span class="contador_rotulo">dias</span>
+          </div>
+          <div class="contador_item">
+            <span class="contador_valor" id="cd-horas">00</span>
+            <span class="contador_rotulo">horas</span>
+          </div>
+          <div class="contador_item">
+            <span class="contador_valor" id="cd-min">00</span>
+            <span class="contador_rotulo">min</span>
+          </div>
+          <div class="contador_item">
+            <span class="contador_valor" id="cd-seg">00</span>
+            <span class="contador_rotulo">seg</span>
+          </div>
+        </div>
+
+        <a href="https://forms.gle/dbGsy87Gqze51vrM7" class="btn btn-primario">Inscreva-se gratuitamente</a>
+      </div>
+
+      <h2 class="secao_titulo" style="margin-top:56px">Localização</h2>
+     
+      <p class="secao_introducao">O evento será realizado no campus principal da Universidade Católica de
+        Pelotas, no centro da cidade.</p>
+
+      <div class="mapa">
+        <iframe
+          title="Mapa de localização do evento"
+          src="https://www.google.com/maps?q=Universidade+Cat%C3%B3lica+de+Pelotas&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANIZAÇÃO + FORMULÁRIO (feedback/contato) + CANAIS-->
+  <section class="secao revelar" id="organizacao">
+    <div class="container">
+      <h2 class="secao_titulo">Organização</h2>
+      <p class="secao_introducao">Conheça a equipe por trás da 12ª Semana Tecnológica.</p>
+
+      <div class="org-grade">
+      
+        <div class="card card-org">
+          <img class="card_foto" src="src/img/carlos.jpeg" alt="Foto de Prof. Carlos Vinícius Rasch Alves">
+          <h4>Prof. Carlos Vinícius Rasch Alves</h4>
+          <p class="card_info">Professor e coordenador do curso de Análise e Desenvolvimento de Sistemas</p>
+        </div>
+
+        <div class="card card-org">
+          <img class="card_foto" src="src/img/morgana.jpeg" alt="Profª. Drª. Morgana Macedo Azevedo da Rosa">
+          <h4>Profª. Drª. Morgana Macedo Azevedo da Rosa</h4>
+          <p class="card_info">Professora</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao-alt revelar" id="contato">
+    <div class="container contato-grade">
+    
+
+      <div class="contato-coluna">
+        <h2 class="secao_titulo">Fale conosco</h2>
+        <p class="secao_introducao">Dúvidas, sugestões ou feedback sobre o evento — preencha o formulário.</p>
+
+        <form class="form" id="formContato" novalidate>
+         
+
+          <div class="form_campo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            <span class="form_erro" role="alert" aria-live="assertive" data-erro-for="nome"></span>
+          </div>
+
+          <div class="form_campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+            <span class="form_erro" role="alert" aria-live="assertive" data-erro-for="email"></span>
+          </div>
+
+          <div class="form_campo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione um assunto</option>
+              <option value="duvida">Dúvida</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="feedback">Feedback</option>
+              <option value="outro">Outro</option>
+            </select>
+            <span class="form_erro" role="alert" aria-live="assertive" data-erro-for="assunto"></span>
+          </div>
+
+          <div class="form_campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+            <span class="form_erro" role="alert" aria-live="assertive" data-erro-for="mensagem"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primario">Enviar mensagem</button>
+      
+          <p class="form_successo" id="formSuccesso" role="status" aria-live="polite" hidden>Mensagem enviada! Em breve entraremos em contato.</p>
+        </form>
+      </div>
+
+      <div class="contato-coluna">
+        <h2 class="secao_titulo">Canais de contato</h2>
+        <ul class="contato-lista">
+          <li><i class="fas fa-envelope" aria-hidden="true"></i> gabriela.rickes@sou.ucpel.edu.br</li>
+          <li><i class="fas fa-phone" aria-hidden="true"></i> (53) 3212-3322</li>
+          <li><i class="fas fa-location-dot" aria-hidden="true"></i> Rua Gonçalves Chaves, 373 — Centro, Pelotas/RS</li>
+        </ul>
+
+          <p class="contato-lista_redes-titulo">Redes sociais</p>
+          <div class="contato-social">
+            <a href="https://www.instagram.com/ucpel" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.facebook.com/UCPel" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+         </a>
+        <a href="https://x.com/ucpel" target="_blank" rel="noopener" aria-label="Twitter/X">
+          <i class="fab fa-x-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/school/ucpel/posts/?feedView=all" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--RODAPÉ-->
+  <footer class="footer">
+  <div class="container footer_grade">
+
+    <div class="footer_marca">
+      <a href="#topo" class="footer_logo">
+        <img src="src/img/logo2023_sites.png" alt="Logo da Universidade Católica de Pelotas" class="header_logo-marca">
+        <span class="footer_logo-texto">Semana Tecnológica <span>UCPel</span></span>
+      </a>
+
+      <p class="footer_descricao">A Semana Tecnológica da UCPel é o maior evento de tecnologia da região sul,
+        reunindo pesquisadores, estudantes e profissionais para explorar o futuro da computação quântica.</p>
+
+      <ul class="footer_contato">
+        <li><i class="fas fa-envelope" aria-hidden="true"></i> gabriela.rickes@sou.ucpel.edu.br</li>
+        <li><i class="fas fa-phone" aria-hidden="true"></i> (53) 3212-3322</li>
+        <li><i class="fas fa-location-dot" aria-hidden="true"></i> Rua Gonçalves Chaves, 373 — Centro, Pelotas/RS</li>
+      </ul>
+    </div>
+
+    <div class="footer_coluna">
+      <h3 class="footer_titulo">Links rápidos</h3>
+      <ul class="footer_links">
+        <li><a href="#topo">Sobre o evento</a></li>
+        <li><a href="#programacao">Programação</a></li>
+        <li><a href="#palestrantes">Palestrantes</a></li>
+        <li><a href="#local">Local</a></li>
+        <li><a href="#organizacao">Organização</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer_coluna">
+      <h3 class="footer_titulo">Redes sociais</h3>
+      <p class="footer_social-introducao">Siga-nos para ficar por dentro das novidades do evento.</p>
+      <div class="footer_social">
+        <a href="https://www.instagram.com/ucpel" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/UCPel" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://x.com/ucpel" target="_blank" rel="noopener" aria-label="Twitter/X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/school/ucpel/posts/?feedView=all" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container footer_botao">
+    <p>&copy; 2026 Quantum Leap Summit — Semana Tecnológica UCPel. Todos os direitos reservados.</p>
+    <button id="voltarAoTopo" class="footer_voltar-ao-topo" aria-label="Voltar ao topo">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+.header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;      
+  z-index: 100;     
+  background: rgba(5, 6, 15, 0.85); 
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border); 
+}
+
+.header_interno {
+  position: relative;
+  display: flex; 
+  align-items: center;        
+  height: 72px; 
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.header_logo {
+  display: flex;       
+  align-items: center;
+  gap: 10px;            
+  font-family: var(--font-title);
+  font-size: 15px;
+  color: var(--color-text);
+  justify-self: start;
+}
+
+.header_logo-marca {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0; 
+}
+
+.header_logo-texto span {
+  color: var(--color-blue);
+}
+
+.header_nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-lista {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-item a {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  transition: color 0.15s ease; 
+}
+
+.nav-item a:hover,
+.nav-item.ativo a {
+  color: var(--color-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header_actions{
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-padrao {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.btn-padrao:hover {
+  opacity: 0.9;
+}
+
+#mobile-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* MENU MOBILE  */
+
+#mobile_menu {
+  display: none;
+  position: fixed;  
+  top: 72px;         
+  left: 0;
+  right: 0;
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 99;        
+}
+
+#mobile_menu.aberto {
+  display: flex;
+}
+
+#mobile_nav_lista {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+}
+
+#mobile_nav_lista .nav-item a {
+  display: block;  
+  padding: 14px 24px;
+  border-top: 1px solid var(--color-border); 
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+#mobile_nav_lista .nav-item a.btn-padrao {
+  display: block;
+  text-align: center;
+  margin: 14px 24px;
+  border-top: none; 
+  width: calc(100% - 48px); 
+}

@@ -1,0 +1,85 @@
+@media (max-width: 1000px) {
+
+  .contato-grade {
+    grid-template-columns: 1fr;
+  }
+
+   .nav-lista {
+    gap: 14px;   
+  }
+
+  .header_logo-texto {
+    font-size: 13px;   
+  }
+
+   .nav-lista,
+  .header_actions .btn-padrao {
+    display: none;
+  }
+
+  #mobile-btn {
+    display: block; 
+  }
+
+  .banner_info {
+    flex-direction: column; 
+    gap: 8px;
+  }
+
+  .program-item {
+    flex-wrap: wrap; 
+  }
+
+   .contador {
+    flex-wrap: wrap; 
+  }
+
+  .swiper {
+    flex-direction: column; 
+  }
+
+  .swiper_seta {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  
+  .banner_slide:nth-child(1) .banner_conteudo {
+    left: 0;
+  }
+  
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card_interno {
+    transition: none; 
+  }
+
+  .card-virar.virado .card_interno {
+    transform: none; 
+  }
+
+  .card-virar .card_frente {
+    display: none; 
+  }
+
+  .card-virar.virado .card_frente {
+    display: flex;
+  }
+
+  .card-virar .card_verso {
+    position: relative;
+    transform: none;
+  }
+
+  .card-virar:not(.virado) .card_verso {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .footer_grade {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

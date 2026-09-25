@@ -1,0 +1,68 @@
+.btn {
+  display: inline-block;  
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 24px;    
+  border-radius: var(--radius);
+  border: 1px solid transparent; 
+  cursor: pointer;       
+  transition: transform 0.15s ease, opacity 0.15s ease;
+ 
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.98); 
+}
+
+
+.btn-contorno {
+  background: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-pequeno {
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed; 
+}
+
+.btn-primario,
+.btn-padrao {
+  background: linear-gradient(
+    135deg,
+    #7C3AED,
+    #5B8CFF
+  );
+
+  color: #ffffff;
+  border: none;
+}
+
+.btn-primario:hover,
+.btn-padrao:hover {
+  background: linear-gradient(
+    135deg,
+    #9B5CFF,
+    #38BDF8
+  );
+}
+
+.btn-secundario {
+  background: rgba(155, 92, 255, 0.08);
+  border: 1px solid #9B5CFF;
+  color: #C084FC;
+}
+
+.btn-secundario:hover {
+  background: rgba(155, 92, 255, 0.18);
+  border-color: #C084FC;
+}
