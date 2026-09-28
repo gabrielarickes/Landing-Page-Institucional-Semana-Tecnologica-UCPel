@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-/* =====================================================================
-   1. BANNER ROTATIVO (Tela 1)
-   ===================================================================== */
+/* BANNER ROTATIVO */
 function iniciaBanner() {
   const areaSlides = document.getElementById('bannerSlides');
   const areaIndicadores = document.getElementById('bannerIndicadores');
@@ -74,9 +72,7 @@ function iniciaBanner() {
 }
 
 
-/* =====================================================================
-   2. CARROSSÉIS HORIZONTAIS (Palestras / Oficinas — estilo Nubank)
-   ===================================================================== */
+/* CARROSSÉIS HORIZONTAIS (Palestras / Oficinas */
 function iniciaCarrossel() {
   const carrosseis = document.querySelectorAll('.carossel');
 
@@ -102,9 +98,7 @@ function iniciaCarrossel() {
 }
 
 
-/* =====================================================================
-   3. SWIPER DE PALESTRANTES (um por vez, com setas + barra de progresso)
-   ===================================================================== */
+/* SWIPER DE PALESTRANTES  */
 function iniciaSwiperPalestrantes() {
   const swiper = document.getElementById('swiperPalestrantes');
   const areaProgresso = document.getElementById('swiperProgresso');
@@ -139,9 +133,7 @@ function iniciaSwiperPalestrantes() {
 }
 
 
-/* =====================================================================
-   4. MENU MOBILE (botão hambúrguer)
-   ===================================================================== */
+/* MENU MOBILE (botão hambúrguer) */
 function iniciaMobileMenu() {
   const alternar = document.getElementById('mobile-btn'); 
   const menu = document.getElementById('mobile_menu');   
@@ -163,9 +155,7 @@ function iniciaMobileMenu() {
 }
 
 
-/* =====================================================================
-   5. SCROLLSPY (destaca no menu qual seção está visível na tela)
-   ===================================================================== */
+/*  SCROLL */
 function iniciaScrollspy() {
  
   const navLinks = document.querySelectorAll('[data-nav]');
@@ -197,9 +187,7 @@ function iniciaScrollspy() {
 }
 
 
-/* =====================================================================
-   6. VALIDAÇÃO DO FORMULÁRIO DE CONTATO/FEEDBACK
-   ===================================================================== */
+/* VALIDAÇÃO DO FORMULÁRIO DE CONTATO/FEEDBACK */
 function iniciaFormValidacao() {
   const form = document.getElementById('formContato');
   if (!form) return;
@@ -259,9 +247,7 @@ function limparErros(form) {
 }
 
 
-/* =====================================================================
-   7. CONTADOR REGRESSIVO até o evento (junto do incentivo, Tela 5)
-   ===================================================================== */
+/* CONTADOR REGRESSIVO   */
 function iniciaContador() {
   const elemento = document.getElementById('contador');
   if (!elemento) return;
@@ -303,9 +289,7 @@ function iniciaContador() {
 }
 
 
-/* =====================================================================
-   8. FADE-IN AO ROLAR A PÁGINA (seções marcadas com a classe .reveal)
-   ===================================================================== */
+
 function iniciaRevelarOnScroll() {
   const elementos = document.querySelectorAll('.revelar');
   if (!elementos.length) return;
@@ -336,13 +320,10 @@ function iniciaVirarCard() {
       const virado = card.classList.toggle('virado');
       card.setAttribute('aria-expanded', String(virado));
 
-      // aria-hidden dinâmico: quando o card NÃO está virado, o verso
-      // fica marcado como aria-hidden, então leitores de tela ignoram
-      // aquele texto até o usuário realmente "abrir" o card
+    
       if (verso) verso.setAttribute('aria-hidden', String(!virado));
     }
 
-    // estado inicial: verso escondido de leitores de tela
     if (verso) verso.setAttribute('aria-hidden', 'true');
 
     card.addEventListener('click', (event) => {
@@ -361,7 +342,7 @@ function iniciaVirarCard() {
   });
 }
 
-/*Footer*/
+/* FOOTER */
 function iniciaVoltarAoTopo(){
   const btn = document.getElementById('voltarAoTopo');
   if(!btn) return;
